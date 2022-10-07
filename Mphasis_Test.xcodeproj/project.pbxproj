@@ -20,6 +20,9 @@
 		E6BF96AA28F0418700360F73 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96A928F0418700360F73 /* Person.swift */; };
 		E6BF96AC28F042A300360F73 /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96AB28F042A300360F73 /* PeopleService.swift */; };
 		E6BF96AF28F048B600360F73 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96AE28F048B600360F73 /* RoomViewModel.swift */; };
+		E6BF96B128F054A100360F73 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96B028F054A100360F73 /* PeopleViewController.swift */; };
+		E6BF96B328F0550800360F73 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96B228F0550800360F73 /* ViewControllerFactory.swift */; };
+		E6BF96B628F055D300360F73 /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96B528F055D300360F73 /* Extension+ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		E6BF96A928F0418700360F73 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E6BF96AB28F042A300360F73 /* PeopleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
 		E6BF96AE28F048B600360F73 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
+		E6BF96B028F054A100360F73 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		E6BF96B228F0550800360F73 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		E6BF96B528F055D300360F73 /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		E6BF968728F01E0300360F73 /* Mphasis_Test */ = {
 			isa = PBXGroup;
 			children = (
+				E6BF96B428F055B900360F73 /* Extension */,
 				E6BF96AD28F048A200360F73 /* View Models */,
 				E6BF96A628F0369900360F73 /* Models */,
 				E6BF96A328F0362000360F73 /* Services */,
@@ -97,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				E6BF968C28F01E0300360F73 /* RoomsViewController.swift */,
+				E6BF96B028F054A100360F73 /* PeopleViewController.swift */,
+				E6BF96B228F0550800360F73 /* ViewControllerFactory.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -134,6 +143,14 @@
 				E6BF96AE28F048B600360F73 /* RoomViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		E6BF96B428F055B900360F73 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF96B528F055D300360F73 /* Extension+ViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,12 +226,15 @@
 			files = (
 				E6BF96A528F0362E00360F73 /* RoomService.swift in Sources */,
 				E6BF96A828F036A400360F73 /* Rooms.swift in Sources */,
+				E6BF96B628F055D300360F73 /* Extension+ViewController.swift in Sources */,
 				E6BF96A228F0252D00360F73 /* HttpHandler.swift in Sources */,
+				E6BF96B128F054A100360F73 /* PeopleViewController.swift in Sources */,
 				E6BF968D28F01E0300360F73 /* RoomsViewController.swift in Sources */,
 				E6BF96AA28F0418700360F73 /* Person.swift in Sources */,
 				E6BF96AF28F048B600360F73 /* RoomViewModel.swift in Sources */,
 				E6BF968928F01E0300360F73 /* AppDelegate.swift in Sources */,
 				E6BF96A028F01FD300360F73 /* EndPoint.swift in Sources */,
+				E6BF96B328F0550800360F73 /* ViewControllerFactory.swift in Sources */,
 				E6BF968B28F01E0300360F73 /* SceneDelegate.swift in Sources */,
 				E6BF96AC28F042A300360F73 /* PeopleService.swift in Sources */,
 			);
