@@ -12,8 +12,14 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("\(EndPoint.getPeople().url)")
-        print("\(EndPoint.getRooms().url)")
+        let roomService = RoomService().getRooms { rooms in
+            
+            print("resule: \(rooms.debugDescription)")
+        }
+        
+        
+    
+        
         // Do any additional setup after loading the view.
     }
 
