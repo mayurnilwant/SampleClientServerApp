@@ -12,15 +12,17 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let roomService = RoomService().getRooms { rooms in
-            
-            print("resule: \(rooms.debugDescription)")
-        }
+//        let roomService = RoomService().getRooms { rooms in
+//
+//            print("resule: \(rooms.debugDescription)")
+//        }
         
+//        let peopleService = PeopleService().getPeople { persons in
+//            print("resule: \(persons.debugDescription)")
+//        }
+//        
+//    
         
-    
-        
-        // Do any additional setup after loading the view.
     }
 
 
