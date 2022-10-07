@@ -13,6 +13,7 @@ class LaunchViewController: UIViewController {
         super.viewDidLoad()
         
         print("\(EndPoint.getPeople().url)")
+        print("\(EndPoint.getRooms().url)")
         // Do any additional setup after loading the view.
     }
 

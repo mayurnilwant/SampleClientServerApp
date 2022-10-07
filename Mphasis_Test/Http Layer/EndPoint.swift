@@ -15,6 +15,7 @@ enum ProjectEnviornment : String {
     case testing = "test/61e947967bc0550017bc61bf.mockapi.io"
 }
 
+// MARK: - HttpScheme Enum
 enum HttpScheme: String {
     
     case HTTP = "http"
@@ -22,19 +23,42 @@ enum HttpScheme: String {
 }
 
 
+
+// MARK: - EndPointPaths Enum
+enum EndPointPaths: String {
+    case rooms = "/rooms"
+    case people = "/people"
+}
+
+
+// MARK: - EndPointPaths Extension
+extension EndPointPaths {
+    
+    private var intermediatePath : String {
+      return "/api/v1/"
+    }
+    func getPath() -> String {
+        return intermediatePath + self.rawValue
+    }
+}
+
+
+// MARK: - EndPoint
 struct EndPoint {
     
     private var scheme: String
     private var host: String
     private var queryParameters: [String: String]?
-    private var path: String?
+    private var path: EndPointPaths?
     
+    
+    // MARK: - Init methods
     private init() {
         self.scheme = HttpScheme.HTTPS.rawValue
         self.host = ProjectEnviornment.production.rawValue
     }
     
-    init(withPath path: String?, andQParam qParam: [String: String]? = ["":""]) {
+    init(withPath path: EndPointPaths?, andQParam qParam: [String: String]? = nil) {
         
         self.init()
         if let path = path {
@@ -56,7 +80,7 @@ extension EndPoint {
         urlComponent.scheme = self.scheme
         urlComponent.host = self.host
         if let _path = self.path {
-            urlComponent.path = _path
+            urlComponent.path = _path.getPath()
         }
         
         if let param = self.queryParameters {
@@ -72,11 +96,13 @@ extension EndPoint {
 extension EndPoint {
     
     static func getPeople() -> Self {
-        
-        EndPoint(withPath: "/people")
+        EndPoint(withPath: EndPointPaths.people)
     }
+
     static func getRooms() -> Self {
-        EndPoint(withPath: "/rooms")
+        EndPoint(withPath: EndPointPaths.rooms)
     }
 }
+
+
 
