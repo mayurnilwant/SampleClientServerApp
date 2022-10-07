@@ -10,7 +10,7 @@ import Foundation
 
 enum ProjectEnviornment : String {
     
-    case production = "/61e947967bc0550017bc61bf.mockapi.io"
+    case production = "61e947967bc0550017bc61bf.mockapi.io"
     case staging = "staging/61e947967bc0550017bc61bf.mockapi.io"
     case testing = "test/61e947967bc0550017bc61bf.mockapi.io"
 }

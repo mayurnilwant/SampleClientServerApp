@@ -11,6 +11,8 @@ class LaunchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("\(EndPoint.getPeople().url)")
         // Do any additional setup after loading the view.
     }
 
