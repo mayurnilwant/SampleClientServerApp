@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E6BF968928F01E0300360F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968828F01E0300360F73 /* AppDelegate.swift */; };
 		E6BF968B28F01E0300360F73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968A28F01E0300360F73 /* SceneDelegate.swift */; };
-		E6BF968D28F01E0300360F73 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968C28F01E0300360F73 /* LaunchViewController.swift */; };
+		E6BF968D28F01E0300360F73 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968C28F01E0300360F73 /* RoomsViewController.swift */; };
 		E6BF969028F01E0300360F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BF968E28F01E0300360F73 /* Main.storyboard */; };
 		E6BF969228F01E0400360F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BF969128F01E0400360F73 /* Assets.xcassets */; };
 		E6BF969528F01E0400360F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6BF969328F01E0400360F73 /* LaunchScreen.storyboard */; };
@@ -19,13 +19,14 @@
 		E6BF96A828F036A400360F73 /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96A728F036A400360F73 /* Rooms.swift */; };
 		E6BF96AA28F0418700360F73 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96A928F0418700360F73 /* Person.swift */; };
 		E6BF96AC28F042A300360F73 /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96AB28F042A300360F73 /* PeopleService.swift */; };
+		E6BF96AF28F048B600360F73 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96AE28F048B600360F73 /* RoomViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E6BF968528F01E0300360F73 /* Mphasis_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mphasis_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BF968828F01E0300360F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6BF968A28F01E0300360F73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E6BF968C28F01E0300360F73 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		E6BF968C28F01E0300360F73 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		E6BF968F28F01E0300360F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6BF969128F01E0400360F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6BF969428F01E0400360F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		E6BF96A728F036A400360F73 /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
 		E6BF96A928F0418700360F73 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E6BF96AB28F042A300360F73 /* PeopleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
+		E6BF96AE28F048B600360F73 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		E6BF968728F01E0300360F73 /* Mphasis_Test */ = {
 			isa = PBXGroup;
 			children = (
+				E6BF96AD28F048A200360F73 /* View Models */,
 				E6BF96A628F0369900360F73 /* Models */,
 				E6BF96A328F0362000360F73 /* Services */,
 				E6BF969E28F01FB400360F73 /* Http Layer */,
@@ -93,7 +96,7 @@
 		E6BF969D28F01FA900360F73 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E6BF968C28F01E0300360F73 /* LaunchViewController.swift */,
+				E6BF968C28F01E0300360F73 /* RoomsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -123,6 +126,14 @@
 				E6BF96A928F0418700360F73 /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E6BF96AD28F048A200360F73 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF96AE28F048B600360F73 /* RoomViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +210,9 @@
 				E6BF96A528F0362E00360F73 /* RoomService.swift in Sources */,
 				E6BF96A828F036A400360F73 /* Rooms.swift in Sources */,
 				E6BF96A228F0252D00360F73 /* HttpHandler.swift in Sources */,
-				E6BF968D28F01E0300360F73 /* LaunchViewController.swift in Sources */,
+				E6BF968D28F01E0300360F73 /* RoomsViewController.swift in Sources */,
 				E6BF96AA28F0418700360F73 /* Person.swift in Sources */,
+				E6BF96AF28F048B600360F73 /* RoomViewModel.swift in Sources */,
 				E6BF968928F01E0300360F73 /* AppDelegate.swift in Sources */,
 				E6BF96A028F01FD300360F73 /* EndPoint.swift in Sources */,
 				E6BF968B28F01E0300360F73 /* SceneDelegate.swift in Sources */,
