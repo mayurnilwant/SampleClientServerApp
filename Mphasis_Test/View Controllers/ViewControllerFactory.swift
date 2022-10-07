@@ -16,9 +16,9 @@ enum ViewControllerType {
 }
 
 
-struct ViewConTrollerFactory {
+struct ViewControllerFactory {
     
-    func getViewControllerObject(ofType type: ViewControllerType) -> UIViewController {
+    static func getViewControllerObject(ofType type: ViewControllerType) -> UIViewController {
                 
         switch type {
         case .rooms:
