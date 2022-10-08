@@ -18,12 +18,15 @@ class PersonDetailViewController: BaseTableViewController<ContactDetailCell, Gen
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Contact Details"
+        self.navigationController?.navigationBar.topItem?.backButtonTitle = "`Back"
         let personDetailArray =  person?.getDisplayData().map({ displayDisctionary -> GenericDisplayModal in
             let key = displayDisctionary.keys.first
             let value = displayDisctionary[key ?? ""]
              return GenericDisplayModal(title: key ?? "", subtitle: value as! String)
         })
         self.items = personDetailArray
+        
     }
     
 }
