@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E638118628F214E100984466 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638118528F214E100984466 /* PersonDetailViewController.swift */; };
+		E638118828F216CE00984466 /* ContactDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638118728F216CE00984466 /* ContactDetailCell.swift */; };
+		E638118B28F218B100984466 /* AppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638118A28F218B100984466 /* AppProtocols.swift */; };
+		E638118D28F21C7A00984466 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638118C28F21C7A00984466 /* Extension+Date.swift */; };
+		E638118F28F21D0B00984466 /* GenericDisplayModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638118E28F21D0B00984466 /* GenericDisplayModal.swift */; };
 		E6AC76CA28F179CA0011BC02 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */; };
 		E6AC76CC28F18A660011BC02 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CB28F18A660011BC02 /* Extension+Color.swift */; };
 		E6AC76CF28F18E290011BC02 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CE28F18E290011BC02 /* RoomCell.swift */; };
@@ -32,6 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E638118528F214E100984466 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		E638118728F216CE00984466 /* ContactDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailCell.swift; sourceTree = "<group>"; };
+		E638118A28F218B100984466 /* AppProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtocols.swift; sourceTree = "<group>"; };
+		E638118C28F21C7A00984466 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		E638118E28F21D0B00984466 /* GenericDisplayModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDisplayModal.swift; sourceTree = "<group>"; };
 		E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		E6AC76CB28F18A660011BC02 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		E6AC76CE28F18E290011BC02 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
@@ -69,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E638118928F218A300984466 /* App Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E638118A28F218B100984466 /* AppProtocols.swift */,
+			);
+			path = "App Protocols";
+			sourceTree = "<group>";
+		};
 		E6AC76C628F1794C0011BC02 /* UI Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +100,7 @@
 		E6AC76C728F1799E0011BC02 /* Base Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E638118928F218A300984466 /* App Protocols */,
 				E6AC76C828F179AC0011BC02 /* Base Table View */,
 				E6AC76D928F1E16C0011BC02 /* AppLabel.swift */,
 			);
@@ -101,6 +120,7 @@
 			children = (
 				E6AC76CE28F18E290011BC02 /* RoomCell.swift */,
 				E6AC76D328F1D2BF0011BC02 /* PersonCell.swift */,
+				E638118728F216CE00984466 /* ContactDetailCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -162,6 +182,7 @@
 				E6BF968C28F01E0300360F73 /* RoomsViewController.swift */,
 				E6BF96B028F054A100360F73 /* PeopleViewController.swift */,
 				E6BF96B228F0550800360F73 /* ViewControllerFactory.swift */,
+				E638118528F214E100984466 /* PersonDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -189,6 +210,7 @@
 			children = (
 				E6BF96A728F036A400360F73 /* Rooms.swift */,
 				E6BF96A928F0418700360F73 /* Person.swift */,
+				E638118E28F21D0B00984466 /* GenericDisplayModal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +229,7 @@
 			children = (
 				E6BF96B528F055D300360F73 /* Extension+ViewController.swift */,
 				E6AC76CB28F18A660011BC02 /* Extension+Color.swift */,
+				E638118C28F21C7A00984466 /* Extension+Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -286,15 +309,20 @@
 				E6AC76D628F1D3510011BC02 /* PeopleViewModel.swift in Sources */,
 				E6BF96A828F036A400360F73 /* Rooms.swift in Sources */,
 				E6BF96B628F055D300360F73 /* Extension+ViewController.swift in Sources */,
+				E638118F28F21D0B00984466 /* GenericDisplayModal.swift in Sources */,
+				E638118D28F21C7A00984466 /* Extension+Date.swift in Sources */,
 				E6BF96A228F0252D00360F73 /* HttpHandler.swift in Sources */,
+				E638118B28F218B100984466 /* AppProtocols.swift in Sources */,
 				E6BF96B128F054A100360F73 /* PeopleViewController.swift in Sources */,
 				E6BF968D28F01E0300360F73 /* RoomsViewController.swift in Sources */,
 				E6AC76CF28F18E290011BC02 /* RoomCell.swift in Sources */,
+				E638118628F214E100984466 /* PersonDetailViewController.swift in Sources */,
 				E6BF96AA28F0418700360F73 /* Person.swift in Sources */,
 				E6AC76CC28F18A660011BC02 /* Extension+Color.swift in Sources */,
 				E6BF96AF28F048B600360F73 /* RoomViewModel.swift in Sources */,
 				E6BF968928F01E0300360F73 /* AppDelegate.swift in Sources */,
 				E6BF96A028F01FD300360F73 /* EndPoint.swift in Sources */,
+				E638118828F216CE00984466 /* ContactDetailCell.swift in Sources */,
 				E6AC76CA28F179CA0011BC02 /* BaseTableViewController.swift in Sources */,
 				E6BF96B328F0550800360F73 /* ViewControllerFactory.swift in Sources */,
 				E6BF968B28F01E0300360F73 /* SceneDelegate.swift in Sources */,

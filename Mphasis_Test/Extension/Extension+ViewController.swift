@@ -12,7 +12,7 @@ import UIKit
 
 extension UIViewController {
     
-    static func getViewControllerObject() -> UIViewController {
+    static func getViewControllerObject(withPassableObject object: ViewControllerPassableObject? = nil) -> UIViewController {
         let _storyBoard = UIStoryboard(name:"Main", bundle: Bundle.main)
         let nibIdentifier = String(describing: self)
         return _storyBoard.instantiateViewController(withIdentifier: nibIdentifier) as! Self

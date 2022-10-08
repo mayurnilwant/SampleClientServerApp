@@ -13,18 +13,23 @@ enum ViewControllerType {
     
     case rooms
     case people
+    case personDetail
 }
 
 
 struct ViewControllerFactory {
     
-    static func getViewControllerObject(ofType type: ViewControllerType) -> UIViewController {
+    static func getViewControllerObject(ofType type: ViewControllerType, andPassableObject object: ViewControllerPassableObject? = nil) -> UIViewController {
                 
         switch type {
         case .rooms:
             return RoomsViewController.getViewControllerObject()
         case .people:
             return PeopleViewController.getViewControllerObject()
+        case .personDetail:
+            var personDC = PersonDetailViewController.getViewControllerObject() as? PersonDetailViewController
+            personDC?.person = object as! Person
+            return personDC ?? UIViewController()
         }
     }
 }

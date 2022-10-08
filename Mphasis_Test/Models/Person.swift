@@ -36,7 +36,7 @@ struct People : Decodable {
 }
 
 
-struct  Person : Decodable {
+struct  Person :  ViewControllerPassableObject {
     
     var firstName : String = ""
     var lastName : String = ""
@@ -53,6 +53,10 @@ struct  Person : Decodable {
         return self.firstName + " " + self.lastName
     }
     
+    var joiningDate : String {
+        
+        return Date.getDisplayValue(fromString: self.createdAt)
+    }
 
     enum CodingKeys: String, CodingKey {
         
@@ -82,6 +86,11 @@ struct  Person : Decodable {
         self.createdAt = try container.decodeIfPresent(String.self, forKey: CodingKeys.createdAt) ?? ""
         self.jobTitle = try container.decodeIfPresent(String.self, forKey: CodingKeys.jobTitle) ?? ""
 
+    }
+    
+    func getDisplayData() -> [[String : Any]] {
+        
+        return [["Name": self.fullName], ["Email": self.email], ["Designation" : self.jobTitle], ["Favourite Colour": self.favouriteColor], ["Joining Date": self.joiningDate]]
     }
     
 

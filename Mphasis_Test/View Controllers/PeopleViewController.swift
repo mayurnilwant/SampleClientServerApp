@@ -50,5 +50,9 @@ extension PeopleViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let personModel = items?[indexPath.row]
+        let personDetailVC = ViewControllerFactory.getViewControllerObject(ofType: .personDetail, andPassableObject: personModel)
+        self.navigationController?.pushViewController(personDetailVC, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
