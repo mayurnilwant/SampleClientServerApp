@@ -10,6 +10,8 @@ import UIKit
 
 class RoomCell : BaseCell<Room> {
     
+    @IBOutlet weak var lblTitle: AppLabel!
+    @IBOutlet weak var lblSubTitle: AppLabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         
@@ -22,10 +24,10 @@ class RoomCell : BaseCell<Room> {
     override var item : Room!{
         didSet {
             
-            self.textLabel?.text = "Room number: \(item.identifier)"
+            self.lblTitle?.text = "Room number: \(item.identifier)"
             
             let isAvailable = item.isOccupied ? "available" : "not available"
-            self.detailTextLabel?.text = "Max occupancy: \(item.maxOccupancy) and it is \(isAvailable)"
+            self.lblSubTitle?.text = "Max occupancy: \(item.maxOccupancy) and it is \(isAvailable)"
         }
     }
     

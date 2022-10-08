@@ -18,6 +18,7 @@ class AppLabel: UILabel {
     
     private func setUp() {
         self.textColor = UIColor.appThemeColor
+        self.numberOfLines = 0
         
     }
 }

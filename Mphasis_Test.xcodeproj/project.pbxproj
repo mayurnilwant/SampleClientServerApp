@@ -10,7 +10,6 @@
 		E6AC76CA28F179CA0011BC02 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */; };
 		E6AC76CC28F18A660011BC02 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CB28F18A660011BC02 /* Extension+Color.swift */; };
 		E6AC76CF28F18E290011BC02 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CE28F18E290011BC02 /* RoomCell.swift */; };
-		E6AC76D228F18F230011BC02 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AC76D128F18F230011BC02 /* RoomCell.xib */; };
 		E6AC76D428F1D2BF0011BC02 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76D328F1D2BF0011BC02 /* PersonCell.swift */; };
 		E6AC76D628F1D3510011BC02 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76D528F1D3510011BC02 /* PeopleViewModel.swift */; };
 		E6AC76DA28F1E16C0011BC02 /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76D928F1E16C0011BC02 /* AppLabel.swift */; };
@@ -36,7 +35,6 @@
 		E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		E6AC76CB28F18A660011BC02 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		E6AC76CE28F18E290011BC02 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
-		E6AC76D128F18F230011BC02 /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
 		E6AC76D328F1D2BF0011BC02 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		E6AC76D528F1D3510011BC02 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		E6AC76D928F1E16C0011BC02 /* AppLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 		E6AC76D028F18F160011BC02 /* Cell Xib */ = {
 			isa = PBXGroup;
 			children = (
-				E6AC76D128F18F230011BC02 /* RoomCell.xib */,
 			);
 			path = "Cell Xib";
 			sourceTree = "<group>";
@@ -274,7 +271,6 @@
 			files = (
 				E6BF969528F01E0400360F73 /* LaunchScreen.storyboard in Resources */,
 				E6BF969228F01E0400360F73 /* Assets.xcassets in Resources */,
-				E6AC76D228F18F230011BC02 /* RoomCell.xib in Resources */,
 				E6BF969028F01E0300360F73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

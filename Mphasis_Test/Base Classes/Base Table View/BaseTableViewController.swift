@@ -21,7 +21,7 @@ class BaseTableViewController<T: BaseCell<U>, U> : UITableViewController {
         
         print(String(describing: T.self))
 //        self.tableView.register(T.self, forCellReuseIdentifier: String(describing: T.self))
-        self.tableView.register(UINib(nibName: String(describing: T.self), bundle: nil), forCellReuseIdentifier: String(describing: T.self))
+//        self.tableView.register(UINib(nibName: String(describing: T.self), bundle: nil), forCellReuseIdentifier: String(describing: T.self))
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 300
