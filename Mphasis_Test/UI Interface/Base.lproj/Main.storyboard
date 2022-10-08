@@ -28,19 +28,36 @@
             </objects>
             <point key="canvasLocation" x="-513" y="976"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="6th-xF-NhQ">
+            <objects>
+                <navigationController id="ARv-3L-tvp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="tLh-I8-UaO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J3E-uA-c56">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZM-1G-lwe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1599" y="115"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="umB-PO-Du4">
             <objects>
                 <tabBarController id="xZd-SX-KBi" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VrM-hJ-oT7">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="VrM-hJ-oT7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.76862745098039209" green="0.0078431372549019607" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="y26-PE-IMa"/>
                         <segue destination="Uo5-lc-1FA" kind="relationship" relationship="viewControllers" id="q0Z-XA-kJy"/>
+                        <segue destination="OGh-pV-JmS" kind="relationship" relationship="viewControllers" id="Pku-tb-6SA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktb-Qd-2H3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -48,27 +65,39 @@
             <point key="canvasLocation" x="-3048" y="599"/>
         </scene>
         <!--Rooms-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="rkT-7A-dmS">
             <objects>
-                <viewController storyboardIdentifier="RoomsViewController" title="Rooms" id="BYZ-38-t0r" customClass="RoomsViewController" customModule="Mphasis_Test" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController storyboardIdentifier="RoomsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OGh-pV-JmS" customClass="RoomsViewController" customModule="Mphasis_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="r9V-hb-aZu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Rooms" landscapeImage="tray" catalog="system" id="rae-Y4-E9e">
-                        <imageReference key="image" image="tray" catalog="system" symbolScale="medium"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Vqw-gT-PyM">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vqw-gT-PyM" id="lzq-0N-hcI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OGh-pV-JmS" id="iAc-Qg-dCr"/>
+                            <outlet property="delegate" destination="OGh-pV-JmS" id="Hos-6I-4Pa"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Rooms" image="tray" id="3xJ-mc-FlV"/>
+                    <navigationItem key="navigationItem" id="bfi-gw-yjx"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0A-rb-7BO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-513" y="276"/>
+            <point key="canvasLocation" x="-513" y="115"/>
         </scene>
     </scenes>
     <resources>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
-        <image name="tray" catalog="system" width="128" height="88"/>
+        <image name="tray" width="46" height="33"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

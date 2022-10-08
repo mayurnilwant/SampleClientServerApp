@@ -7,11 +7,26 @@
 
 import UIKit
 
-class RoomsViewController: UIViewController {
+
+
+
+class BaseCell<U: Any>: UITableViewCell {
+    var item: U!
+}
+
+struct TempModel {
+    var name = "Mayur"
+}
+
+
+
+class RoomsViewController: BaseTableViewController<RoomCell, Room>{
 
     var roomsVM : RoomViewModel?
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        self.title = "Rooms"
         self.configureRoomVM()
         self.getRoomList()
         
@@ -26,7 +41,10 @@ class RoomsViewController: UIViewController {
                     //Error retrieving data
                 print(errorString)
             }else {
-                // Success
+                self.items = rooms
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
             
         })

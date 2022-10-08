@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6AC76CA28F179CA0011BC02 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */; };
+		E6AC76CC28F18A660011BC02 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CB28F18A660011BC02 /* Extension+Color.swift */; };
+		E6AC76CF28F18E290011BC02 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CE28F18E290011BC02 /* RoomCell.swift */; };
+		E6AC76D228F18F230011BC02 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AC76D128F18F230011BC02 /* RoomCell.xib */; };
 		E6BF968928F01E0300360F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968828F01E0300360F73 /* AppDelegate.swift */; };
 		E6BF968B28F01E0300360F73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968A28F01E0300360F73 /* SceneDelegate.swift */; };
 		E6BF968D28F01E0300360F73 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968C28F01E0300360F73 /* RoomsViewController.swift */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		E6AC76CB28F18A660011BC02 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		E6AC76CE28F18E290011BC02 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		E6AC76D128F18F230011BC02 /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
 		E6BF968528F01E0300360F73 /* Mphasis_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mphasis_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BF968828F01E0300360F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6BF968A28F01E0300360F73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,10 +68,43 @@
 		E6AC76C628F1794C0011BC02 /* UI Interface */ = {
 			isa = PBXGroup;
 			children = (
+				E6AC76D028F18F160011BC02 /* Cell Xib */,
 				E6BF969328F01E0400360F73 /* LaunchScreen.storyboard */,
 				E6BF968E28F01E0300360F73 /* Main.storyboard */,
 			);
 			path = "UI Interface";
+			sourceTree = "<group>";
+		};
+		E6AC76C728F1799E0011BC02 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC76C828F179AC0011BC02 /* Base Table View */,
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
+		E6AC76C828F179AC0011BC02 /* Base Table View */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */,
+			);
+			path = "Base Table View";
+			sourceTree = "<group>";
+		};
+		E6AC76CD28F18E1B0011BC02 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC76CE28F18E290011BC02 /* RoomCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		E6AC76D028F18F160011BC02 /* Cell Xib */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC76D128F18F230011BC02 /* RoomCell.xib */,
+			);
+			path = "Cell Xib";
 			sourceTree = "<group>";
 		};
 		E6BF967C28F01E0300360F73 = {
@@ -85,12 +126,14 @@
 		E6BF968728F01E0300360F73 /* Mphasis_Test */ = {
 			isa = PBXGroup;
 			children = (
+				E6AC76C728F1799E0011BC02 /* Base Classes */,
 				E6AC76C628F1794C0011BC02 /* UI Interface */,
 				E6BF96B428F055B900360F73 /* Extension */,
 				E6BF96AD28F048A200360F73 /* View Models */,
 				E6BF96A628F0369900360F73 /* Models */,
 				E6BF96A328F0362000360F73 /* Services */,
 				E6BF969E28F01FB400360F73 /* Http Layer */,
+				E6AC76CD28F18E1B0011BC02 /* Custom Cells */,
 				E6BF969D28F01FA900360F73 /* View Controllers */,
 				E6BF969C28F01F9800360F73 /* App Delegates */,
 				E6BF969128F01E0400360F73 /* Assets.xcassets */,
@@ -157,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				E6BF96B528F055D300360F73 /* Extension+ViewController.swift */,
+				E6AC76CB28F18A660011BC02 /* Extension+Color.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -221,6 +265,7 @@
 			files = (
 				E6BF969528F01E0400360F73 /* LaunchScreen.storyboard in Resources */,
 				E6BF969228F01E0400360F73 /* Assets.xcassets in Resources */,
+				E6AC76D228F18F230011BC02 /* RoomCell.xib in Resources */,
 				E6BF969028F01E0300360F73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,10 +283,13 @@
 				E6BF96A228F0252D00360F73 /* HttpHandler.swift in Sources */,
 				E6BF96B128F054A100360F73 /* PeopleViewController.swift in Sources */,
 				E6BF968D28F01E0300360F73 /* RoomsViewController.swift in Sources */,
+				E6AC76CF28F18E290011BC02 /* RoomCell.swift in Sources */,
 				E6BF96AA28F0418700360F73 /* Person.swift in Sources */,
+				E6AC76CC28F18A660011BC02 /* Extension+Color.swift in Sources */,
 				E6BF96AF28F048B600360F73 /* RoomViewModel.swift in Sources */,
 				E6BF968928F01E0300360F73 /* AppDelegate.swift in Sources */,
 				E6BF96A028F01FD300360F73 /* EndPoint.swift in Sources */,
+				E6AC76CA28F179CA0011BC02 /* BaseTableViewController.swift in Sources */,
 				E6BF96B328F0550800360F73 /* ViewControllerFactory.swift in Sources */,
 				E6BF968B28F01E0300360F73 /* SceneDelegate.swift in Sources */,
 				E6BF96AC28F042A300360F73 /* PeopleService.swift in Sources */,
