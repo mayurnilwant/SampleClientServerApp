@@ -9,7 +9,40 @@ import Foundation
 import UIKit
 
 
-class PeopleViewController: UIViewController {
+class PeopleViewController: BaseTableViewController<PersonCell, Person> {
+     var peopleVM : PeopleViewModel?
     
     
+    
+    override func viewDidLoad() {
+        self.configureRoomVM()
+        self.getPeopList()
+    }
+    
+    
+    
+    private func configureRoomVM() {
+        
+        let personService = PeopleService()
+        self.peopleVM = PeopleViewModel(withPersonService: personService, andCallBack:{ people, errorString in
+            
+            if let errorString = errorString {
+                    //Error retrieving data
+                print(errorString)
+            }else {
+                self.items = people
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+
+            
+        })
+
+    }
+    
+    private func getPeopList()  {
+        self.peopleVM?.getPeople()
+    }
+
 }

@@ -18,8 +18,10 @@ class BaseTableViewController<T: BaseCell<U>, U> : UITableViewController {
     
     override func viewDidLoad() {
         
-        self.tableView.register(T.self, forCellReuseIdentifier: String(describing: T.self))
-//        self.tableView.register(UINib(nibName: String(describing: T.self), bundle: nil), forCellReuseIdentifier: String(describing: T.self))
+        
+        print(String(describing: T.self))
+//        self.tableView.register(T.self, forCellReuseIdentifier: String(describing: T.self))
+        self.tableView.register(UINib(nibName: String(describing: T.self), bundle: nil), forCellReuseIdentifier: String(describing: T.self))
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 300

@@ -11,6 +11,8 @@
 		E6AC76CC28F18A660011BC02 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CB28F18A660011BC02 /* Extension+Color.swift */; };
 		E6AC76CF28F18E290011BC02 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CE28F18E290011BC02 /* RoomCell.swift */; };
 		E6AC76D228F18F230011BC02 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AC76D128F18F230011BC02 /* RoomCell.xib */; };
+		E6AC76D428F1D2BF0011BC02 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76D328F1D2BF0011BC02 /* PersonCell.swift */; };
+		E6AC76D628F1D3510011BC02 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76D528F1D3510011BC02 /* PeopleViewModel.swift */; };
 		E6BF968928F01E0300360F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968828F01E0300360F73 /* AppDelegate.swift */; };
 		E6BF968B28F01E0300360F73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968A28F01E0300360F73 /* SceneDelegate.swift */; };
 		E6BF968D28F01E0300360F73 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF968C28F01E0300360F73 /* RoomsViewController.swift */; };
@@ -34,6 +36,8 @@
 		E6AC76CB28F18A660011BC02 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		E6AC76CE28F18E290011BC02 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		E6AC76D128F18F230011BC02 /* RoomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
+		E6AC76D328F1D2BF0011BC02 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		E6AC76D528F1D3510011BC02 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		E6BF968528F01E0300360F73 /* Mphasis_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mphasis_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BF968828F01E0300360F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6BF968A28F01E0300360F73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E6AC76CE28F18E290011BC02 /* RoomCell.swift */,
+				E6AC76D328F1D2BF0011BC02 /* PersonCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				E6BF96AE28F048B600360F73 /* RoomViewModel.swift */,
+				E6AC76D528F1D3510011BC02 /* PeopleViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6BF96A528F0362E00360F73 /* RoomService.swift in Sources */,
+				E6AC76D628F1D3510011BC02 /* PeopleViewModel.swift in Sources */,
 				E6BF96A828F036A400360F73 /* Rooms.swift in Sources */,
 				E6BF96B628F055D300360F73 /* Extension+ViewController.swift in Sources */,
 				E6BF96A228F0252D00360F73 /* HttpHandler.swift in Sources */,
@@ -292,6 +299,7 @@
 				E6AC76CA28F179CA0011BC02 /* BaseTableViewController.swift in Sources */,
 				E6BF96B328F0550800360F73 /* ViewControllerFactory.swift in Sources */,
 				E6BF968B28F01E0300360F73 /* SceneDelegate.swift in Sources */,
+				E6AC76D428F1D2BF0011BC02 /* PersonCell.swift in Sources */,
 				E6BF96AC28F042A300360F73 /* PeopleService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

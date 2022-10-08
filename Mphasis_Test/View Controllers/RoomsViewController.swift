@@ -7,17 +7,9 @@
 
 import UIKit
 
-
-
-
 class BaseCell<U: Any>: UITableViewCell {
     var item: U!
 }
-
-struct TempModel {
-    var name = "Mayur"
-}
-
 
 
 class RoomsViewController: BaseTableViewController<RoomCell, Room>{
