@@ -12,6 +12,7 @@ class RoomCell : BaseCell<Room> {
     
     @IBOutlet weak var lblTitle: AppLabel!
     @IBOutlet weak var lblSubTitle: AppLabel!
+    @IBOutlet weak var btnOccupancy: OccupancyButton!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         
@@ -25,9 +26,8 @@ class RoomCell : BaseCell<Room> {
         didSet {
             
             self.lblTitle?.text = "Room number: \(item.identifier)"
-            
-            let isAvailable = item.isOccupied ? "available" : "not available"
-            self.lblSubTitle?.text = "Max occupancy: \(item.maxOccupancy) and it is \(isAvailable)"
+            self.lblSubTitle?.text = "Max occupancy: \(item.maxOccupancy)"
+            self.btnOccupancy.status = item.isOccupied ? .occupied : .available
         }
     }
     

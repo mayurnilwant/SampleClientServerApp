@@ -12,6 +12,7 @@
 		E638118B28F218B100984466 /* AppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638118A28F218B100984466 /* AppProtocols.swift */; };
 		E638118D28F21C7A00984466 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638118C28F21C7A00984466 /* Extension+Date.swift */; };
 		E638118F28F21D0B00984466 /* GenericDisplayModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638118E28F21D0B00984466 /* GenericDisplayModal.swift */; };
+		E638119128F2284700984466 /* OccupancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E638119028F2284700984466 /* OccupancyButton.swift */; };
 		E6AC76CA28F179CA0011BC02 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */; };
 		E6AC76CC28F18A660011BC02 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CB28F18A660011BC02 /* Extension+Color.swift */; };
 		E6AC76CF28F18E290011BC02 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC76CE28F18E290011BC02 /* RoomCell.swift */; };
@@ -42,6 +43,7 @@
 		E638118A28F218B100984466 /* AppProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtocols.swift; sourceTree = "<group>"; };
 		E638118C28F21C7A00984466 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		E638118E28F21D0B00984466 /* GenericDisplayModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDisplayModal.swift; sourceTree = "<group>"; };
+		E638119028F2284700984466 /* OccupancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccupancyButton.swift; sourceTree = "<group>"; };
 		E6AC76C928F179CA0011BC02 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		E6AC76CB28F18A660011BC02 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		E6AC76CE28F18E290011BC02 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
@@ -100,9 +102,10 @@
 		E6AC76C728F1799E0011BC02 /* Base Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E6AC76D928F1E16C0011BC02 /* AppLabel.swift */,
+				E638119028F2284700984466 /* OccupancyButton.swift */,
 				E638118928F218A300984466 /* App Protocols */,
 				E6AC76C828F179AC0011BC02 /* Base Table View */,
-				E6AC76D928F1E16C0011BC02 /* AppLabel.swift */,
 			);
 			path = "Base Classes";
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				E6BF96A528F0362E00360F73 /* RoomService.swift in Sources */,
 				E6AC76D628F1D3510011BC02 /* PeopleViewModel.swift in Sources */,
 				E6BF96A828F036A400360F73 /* Rooms.swift in Sources */,
+				E638119128F2284700984466 /* OccupancyButton.swift in Sources */,
 				E6BF96B628F055D300360F73 /* Extension+ViewController.swift in Sources */,
 				E638118F28F21D0B00984466 /* GenericDisplayModal.swift in Sources */,
 				E638118D28F21C7A00984466 /* Extension+Date.swift in Sources */,

@@ -128,7 +128,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ize-sc-ExC" customClass="AppLabel" customModule="Mphasis_Test" customModuleProvider="target">
-                                            <rect key="frame" x="40" y="21" width="344" height="21"/>
+                                            <rect key="frame" x="40" y="21" width="220" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="gZ9-qG-3yE"/>
                                             </constraints>
@@ -137,7 +137,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="occupancy detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Z-8e-nZo" customClass="AppLabel" customModule="Mphasis_Test" customModuleProvider="target">
-                                            <rect key="frame" x="40" y="52" width="364" height="30"/>
+                                            <rect key="frame" x="40" y="52" width="220" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="NK0-TX-aYK"/>
                                             </constraints>
@@ -145,18 +145,34 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rx9-kJ-Zl7" customClass="OccupancyButton" customModule="Mphasis_Test" customModuleProvider="target">
+                                            <rect key="frame" x="294" y="30.5" width="100" height="31"/>
+                                            <color key="backgroundColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="31" id="kXI-kl-4oc"/>
+                                                <constraint firstAttribute="width" constant="100" id="nXX-Ek-DeP"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption2"/>
+                                                <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </buttonConfiguration>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="ize-sc-ExC" secondAttribute="trailing" constant="10" id="FFk-yM-mzs"/>
                                         <constraint firstItem="ize-sc-ExC" firstAttribute="top" secondItem="lzq-0N-hcI" secondAttribute="topMargin" constant="10" id="MJP-F5-bZw"/>
-                                        <constraint firstAttribute="trailing" secondItem="Y0Z-8e-nZo" secondAttribute="trailing" constant="10" id="Nef-z1-SLn"/>
+                                        <constraint firstItem="rx9-kJ-Zl7" firstAttribute="centerY" secondItem="lzq-0N-hcI" secondAttribute="centerY" id="VQj-bA-Ji8"/>
+                                        <constraint firstItem="rx9-kJ-Zl7" firstAttribute="leading" secondItem="ize-sc-ExC" secondAttribute="trailing" constant="34" id="f4y-qL-RLz"/>
                                         <constraint firstItem="Y0Z-8e-nZo" firstAttribute="top" secondItem="ize-sc-ExC" secondAttribute="bottom" constant="10" id="juH-he-oOL"/>
+                                        <constraint firstItem="rx9-kJ-Zl7" firstAttribute="trailing" secondItem="lzq-0N-hcI" secondAttribute="trailingMargin" id="lRx-qv-LNx"/>
                                         <constraint firstAttribute="bottom" secondItem="Y0Z-8e-nZo" secondAttribute="bottom" constant="10" id="lpJ-6g-YAw"/>
+                                        <constraint firstItem="rx9-kJ-Zl7" firstAttribute="leading" secondItem="Y0Z-8e-nZo" secondAttribute="trailing" constant="34" id="n06-nu-cvh"/>
                                         <constraint firstItem="ize-sc-ExC" firstAttribute="leading" secondItem="lzq-0N-hcI" secondAttribute="leadingMargin" constant="20" id="qXj-tF-Vhg"/>
                                         <constraint firstItem="Y0Z-8e-nZo" firstAttribute="leading" secondItem="ize-sc-ExC" secondAttribute="leading" id="wNa-LN-U7n"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="btnOccupancy" destination="rx9-kJ-Zl7" id="Phi-Ax-Vay"/>
                                     <outlet property="lblSubTitle" destination="Y0Z-8e-nZo" id="p8S-JE-VzA"/>
                                     <outlet property="lblTitle" destination="ize-sc-ExC" id="rrw-yO-8oT"/>
                                 </connections>
