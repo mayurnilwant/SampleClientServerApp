@@ -67,7 +67,9 @@
                             <outlet property="delegate" destination="OGh-pV-JmS" id="Hos-6I-4Pa"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Rooms" image="tray" id="3xJ-mc-FlV"/>
+                    <tabBarItem key="tabBarItem" title="Rooms" image="tray" id="3xJ-mc-FlV">
+                        <color key="badgeColor" red="0.30196078430000001" green="0.0039215686269999999" blue="0.0" alpha="0.69803921570000005" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="bfi-gw-yjx"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0A-rb-7BO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -90,7 +92,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCM-on-wtr">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCM-on-wtr" customClass="AppLabel" customModule="Mphasis_Test" customModuleProvider="target">
                                             <rect key="frame" x="10" y="10" width="394" height="21.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21.5" id="LGR-gX-UuO"/>
@@ -99,7 +101,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9V-bZ-nxo">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9V-bZ-nxo" customClass="AppLabel" customModule="Mphasis_Test" customModuleProvider="target">
                                             <rect key="frame" x="10" y="46" width="394" height="21.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21.5" id="8R8-ij-Wbv"/>
@@ -130,7 +132,9 @@
                             <outlet property="delegate" destination="W5U-aL-Ebd" id="0RD-gG-bPD"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="People" image="person.3.fill" id="VVd-P5-tPf"/>
+                    <tabBarItem key="tabBarItem" title="People" image="person.3.fill" id="VVd-P5-tPf">
+                        <color key="badgeColor" red="0.30196078431372547" green="0.0039215686274509803" blue="0.0" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMA-hc-jIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
