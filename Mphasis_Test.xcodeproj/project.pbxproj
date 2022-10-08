@@ -57,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6AC76C628F1794C0011BC02 /* UI Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF969328F01E0400360F73 /* LaunchScreen.storyboard */,
+				E6BF968E28F01E0300360F73 /* Main.storyboard */,
+			);
+			path = "UI Interface";
+			sourceTree = "<group>";
+		};
 		E6BF967C28F01E0300360F73 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +85,7 @@
 		E6BF968728F01E0300360F73 /* Mphasis_Test */ = {
 			isa = PBXGroup;
 			children = (
+				E6AC76C628F1794C0011BC02 /* UI Interface */,
 				E6BF96B428F055B900360F73 /* Extension */,
 				E6BF96AD28F048A200360F73 /* View Models */,
 				E6BF96A628F0369900360F73 /* Models */,
@@ -83,9 +93,7 @@
 				E6BF969E28F01FB400360F73 /* Http Layer */,
 				E6BF969D28F01FA900360F73 /* View Controllers */,
 				E6BF969C28F01F9800360F73 /* App Delegates */,
-				E6BF968E28F01E0300360F73 /* Main.storyboard */,
 				E6BF969128F01E0400360F73 /* Assets.xcassets */,
-				E6BF969328F01E0400360F73 /* LaunchScreen.storyboard */,
 				E6BF969628F01E0400360F73 /* Info.plist */,
 			);
 			path = Mphasis_Test;
