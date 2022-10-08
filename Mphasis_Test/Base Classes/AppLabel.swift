@@ -19,8 +19,13 @@ class AppLabel: UILabel {
     
     private func setUp() {
         self.textColor = UIColor.appThemeColor
+        self.makeItAccessible()
+        
+    }
+    
+    private func makeItAccessible() {
         // This property is set to enable it multiple line in case of accesibility font size changes.
         self.numberOfLines = 0
-        
+        self.isAccessibilityElement = true
     }
 }
