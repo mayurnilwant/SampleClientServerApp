@@ -12,11 +12,10 @@ import UIKit
 class PeopleViewController: BaseTableViewController<PersonCell, Person> {
      var peopleVM : PeopleViewModel?
     
-    
-    
     override func viewDidLoad() {
         self.configureRoomVM()
         self.getPeopList()
+        self.title = "Contacts"
     }
     
     
@@ -45,4 +44,11 @@ class PeopleViewController: BaseTableViewController<PersonCell, Person> {
         self.peopleVM?.getPeople()
     }
 
+}
+
+extension PeopleViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }

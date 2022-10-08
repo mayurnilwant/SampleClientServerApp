@@ -8,11 +8,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--People-->
         <scene sceneID="6th-xF-NhQ">
             <objects>
                 <navigationController id="ARv-3L-tvp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tLh-I8-UaO"/>
+                    <tabBarItem key="tabBarItem" title="People" image="person.3.fill" id="tLh-I8-UaO">
+                        <color key="badgeColor" red="0.76862745098039209" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J3E-uA-c56">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -20,10 +22,13 @@
                             <color key="textColor" red="0.76862745099999996" green="0.0078431372550000003" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
+                    <connections>
+                        <segue destination="W5U-aL-Ebd" kind="relationship" relationship="rootViewController" id="mtr-T1-yzK"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZM-1G-lwe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1599" y="115"/>
+            <point key="canvasLocation" x="-2116" y="1143"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="umB-PO-Du4">
@@ -37,7 +42,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="OGh-pV-JmS" kind="relationship" relationship="viewControllers" id="Pku-tb-6SA"/>
-                        <segue destination="W5U-aL-Ebd" kind="relationship" relationship="viewControllers" id="dbF-IT-C9v"/>
+                        <segue destination="ARv-3L-tvp" kind="relationship" relationship="viewControllers" id="aP2-LN-gFM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktb-Qd-2H3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -100,7 +105,7 @@
                             <outlet property="delegate" destination="OGh-pV-JmS" id="Hos-6I-4Pa"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Rooms" image="tray" id="3xJ-mc-FlV">
+                    <tabBarItem key="tabBarItem" title="Rooms" image="tray" largeContentSizeImage="tray" id="3xJ-mc-FlV">
                         <color key="badgeColor" red="0.30196078430000001" green="0.0039215686269999999" blue="0.0" alpha="0.69803921570000005" colorSpace="calibratedRGB"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="bfi-gw-yjx"/>
@@ -165,13 +170,14 @@
                             <outlet property="delegate" destination="W5U-aL-Ebd" id="0RD-gG-bPD"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="People" image="person.3.fill" id="VVd-P5-tPf">
+                    <tabBarItem key="tabBarItem" title="People" image="person.3.fill" largeContentSizeImage="person.3.fill" id="VVd-P5-tPf">
                         <color key="badgeColor" red="0.30196078431372547" green="0.0039215686274509803" blue="0.0" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="0Nw-le-wB9"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMA-hc-jIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1015.9420289855074" y="1086.8303571428571"/>
+            <point key="canvasLocation" x="-623" y="1300"/>
         </scene>
     </scenes>
     <resources>

@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 
+//MARK: AppLabel Class
 class AppLabel: UILabel {
     
     required init?(coder: NSCoder) {
@@ -18,6 +19,7 @@ class AppLabel: UILabel {
     
     private func setUp() {
         self.textColor = UIColor.appThemeColor
+        // This property is set to enable it multiple line in case of accesibility font size changes.
         self.numberOfLines = 0
         
     }
