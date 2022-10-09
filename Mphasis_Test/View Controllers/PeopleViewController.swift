@@ -10,29 +10,37 @@ import UIKit
 import SwiftUI
 
 
-class PeopleViewController: BaseTableViewController<PersonCell, Person> {
+class PeopleViewController: BaseTableViewController<PersonCell, Person>, ActivityIndicatorProtocol {
+    
+    var activityIndicator: UIActivityIndicatorView?
+    
      var peopleVM : PeopleViewModel?
     
     override func viewDidLoad() {
-        self.configureRoomVM()
+        self.configureActivityIndicatorView()
+        self.configurePeopleVM()
         self.getPeopList()
         self.title = "Contacts"
     }
     
     
     
-    private func configureRoomVM() {
+    private func configurePeopleVM() {
         
+        self.showActivityIndicator()
         let personService = PeopleService()
-        self.peopleVM = PeopleViewModel(withPersonService: personService, andCallBack:{ people, errorString in
+        self.peopleVM = PeopleViewModel(withPersonService: personService, andCallBack:{[weak self] people, errorString in
             
+            DispatchQueue.main.async {
+                self?.hideActivityIndicator()
+            }
             if let errorString = errorString {
                     //Error retrieving data
                 print(errorString)
             }else {
-                self.items = people
+                self?.items = people
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
+                    self?.tableView.reloadData()
                 }
             }
 
@@ -53,8 +61,6 @@ extension PeopleViewController {
         
         
         let personModel = items?[indexPath.row]
-        
-
         var personDetailVC : UIViewController!
         if #available(iOS 13.0, *) {
             personDetailVC  = UIHostingController(rootView: PersonDetailView(person: personModel))

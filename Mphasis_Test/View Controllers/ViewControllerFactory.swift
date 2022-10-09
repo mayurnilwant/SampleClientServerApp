@@ -27,8 +27,8 @@ struct ViewControllerFactory {
         case .people:
             return PeopleViewController.getViewControllerObject()
         case .personDetail:
-            var personDC = PersonDetailViewController.getViewControllerObject() as? PersonDetailViewController
-            personDC?.person = object as! Person
+            let personDC = PersonDetailViewController.getViewControllerObject() as? PersonDetailViewController
+            personDC?.person = object as? Person
             return personDC ?? UIViewController()
         }
     }

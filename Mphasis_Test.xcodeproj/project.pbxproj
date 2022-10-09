@@ -39,6 +39,7 @@
 		E6C2BBEA28F2913E00F9BA93 /* UrlGeneratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBE928F2913E00F9BA93 /* UrlGeneratorTest.swift */; };
 		E6C2BBEC28F2944D00F9BA93 /* RoomsVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBEB28F2944D00F9BA93 /* RoomsVMTest.swift */; };
 		E6C2BBF028F312A600F9BA93 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBEF28F312A600F9BA93 /* PersonDetailView.swift */; };
+		E6C2BBF228F3532A00F9BA93 /* ActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBF128F3532A00F9BA93 /* ActivityIndicatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		E6C2BBE928F2913E00F9BA93 /* UrlGeneratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlGeneratorTest.swift; sourceTree = "<group>"; };
 		E6C2BBEB28F2944D00F9BA93 /* RoomsVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsVMTest.swift; sourceTree = "<group>"; };
 		E6C2BBEF28F312A600F9BA93 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		E6C2BBF128F3532A00F9BA93 /* ActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				E638118A28F218B100984466 /* AppProtocols.swift */,
+				E6C2BBF128F3532A00F9BA93 /* ActivityIndicatorProtocol.swift */,
 			);
 			path = "App Protocols";
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			files = (
 				E6BF96A528F0362E00360F73 /* RoomService.swift in Sources */,
 				E6AC76D628F1D3510011BC02 /* PeopleViewModel.swift in Sources */,
+				E6C2BBF228F3532A00F9BA93 /* ActivityIndicatorProtocol.swift in Sources */,
 				E6BF96A828F036A400360F73 /* Rooms.swift in Sources */,
 				E638119128F2284700984466 /* OccupancyButton.swift in Sources */,
 				E6BF96B628F055D300360F73 /* Extension+ViewController.swift in Sources */,

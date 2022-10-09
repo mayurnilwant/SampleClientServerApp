@@ -12,13 +12,15 @@ class BaseCell<U: Any>: UITableViewCell {
 }
 
 
-class RoomsViewController: BaseTableViewController<RoomCell, Room>{
-
+class RoomsViewController: BaseTableViewController<RoomCell, Room>, ActivityIndicatorProtocol{
+    
+    var activityIndicator: UIActivityIndicatorView?
     var roomsVM : RoomViewModel?
     override func viewDidLoad() {
         
         super.viewDidLoad()
         self.title = "Rooms"
+        self.configureActivityIndicatorView()
         self.configureRoomVM()
         self.getRoomList()
         
@@ -28,14 +30,18 @@ class RoomsViewController: BaseTableViewController<RoomCell, Room>{
     private func configureRoomVM() {
         
         let roomService = RoomService()
-        self.roomsVM = RoomViewModel(withRoomService: roomService, andCallBack: { rooms, errorString in
+        showActivityIndicator()
+        self.roomsVM = RoomViewModel(withRoomService: roomService, andCallBack: {[weak self] rooms, errorString in
+            DispatchQueue.main.async {
+                self?.hideActivityIndicator()
+            }
             if let errorString = errorString {
                     //Error retrieving data
                 print(errorString)
             }else {
-                self.items = rooms
+                self?.items = rooms
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
+                    self?.tableView.reloadData()
                 }
             }
             

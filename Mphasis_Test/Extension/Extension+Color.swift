@@ -17,6 +17,9 @@ extension UIColor {
         return UIColor(red: (196.0/255.0), green: (2.0/255.0), blue: (2.0/255.0), alpha: 1.0)
 
     }
+    static func appThemeColor(withOpacity opacity: Float) -> UIColor {
+        UIColor(red: (196.0/255.0), green: (2.0/255.0), blue: (2.0/255.0), alpha: CGFloat(opacity))
+    }
 }
 
 
