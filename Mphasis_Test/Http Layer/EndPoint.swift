@@ -35,7 +35,7 @@ enum EndPointPaths: String {
 extension EndPointPaths {
     
     private var intermediatePath : String {
-      return "/api/v1/"
+      return "/api/v1"
     }
     func getPath() -> String {
         return intermediatePath + self.rawValue
@@ -88,6 +88,7 @@ extension EndPoint {
                 return URLQueryItem(name: value, value: key)
             })
         }
+        print("\(urlComponent.url?.description)")
         return urlComponent.url
     }
 }
