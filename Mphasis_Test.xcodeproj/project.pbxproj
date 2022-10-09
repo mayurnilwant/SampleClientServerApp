@@ -37,6 +37,7 @@
 		E6BF96B628F055D300360F73 /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF96B528F055D300360F73 /* Extension+ViewController.swift */; };
 		E6C2BBE328F2912000F9BA93 /* Mphasis_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBE228F2912000F9BA93 /* Mphasis_TestTests.swift */; };
 		E6C2BBEA28F2913E00F9BA93 /* UrlGeneratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBE928F2913E00F9BA93 /* UrlGeneratorTest.swift */; };
+		E6C2BBEC28F2944D00F9BA93 /* RoomsVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBEB28F2944D00F9BA93 /* RoomsVMTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		E6C2BBE028F2912000F9BA93 /* Mphasis_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mphasis_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C2BBE228F2912000F9BA93 /* Mphasis_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mphasis_TestTests.swift; sourceTree = "<group>"; };
 		E6C2BBE928F2913E00F9BA93 /* UrlGeneratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlGeneratorTest.swift; sourceTree = "<group>"; };
+		E6C2BBEB28F2944D00F9BA93 /* RoomsVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsVMTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			children = (
 				E6C2BBE228F2912000F9BA93 /* Mphasis_TestTests.swift */,
 				E6C2BBE928F2913E00F9BA93 /* UrlGeneratorTest.swift */,
+				E6C2BBEB28F2944D00F9BA93 /* RoomsVMTest.swift */,
 			);
 			path = Mphasis_TestTests;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C2BBE328F2912000F9BA93 /* Mphasis_TestTests.swift in Sources */,
+				E6C2BBEC28F2944D00F9BA93 /* RoomsVMTest.swift in Sources */,
 				E6C2BBEA28F2913E00F9BA93 /* UrlGeneratorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

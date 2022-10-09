@@ -46,6 +46,8 @@ struct Room : Decodable {
         case identifier = "id"
     }
     
+    
+    
     init(from decoder: Decoder) throws {
         
         do {
@@ -61,6 +63,22 @@ struct Room : Decodable {
         }
         
         
+    }
+    
+}
+
+extension Room {
+    init()
+        {
+            createdAt = "2022-01-24T20:52:50.765Z"
+            maxOccupancy = 53539
+            isOccupied = false
+            identifier = "1"
+        }
+    
+    static func mockData() -> Room {
+        
+        return Room()
     }
     
 }

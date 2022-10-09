@@ -9,11 +9,11 @@ import Foundation
 import Metal
 
 
-protocol RoomServicable {
+protocol RoomServicable: HttpServicable {
     func getRooms(withCallback callBack:@escaping ([Room]) -> Void)
 }
 
-class RoomService: RoomServicable, HttpServicable {
+class RoomService: RoomServicable {
     
     func getRooms(withCallback callBack:@escaping ([Room]) -> Void){
         
