@@ -8,7 +8,8 @@
 import Foundation
 
 
-struct GenericDisplayModal {
+struct GenericDisplayModal: Identifiable {
     var title = ""
     var subtitle = ""
+    var id = UUID().uuidString
 }

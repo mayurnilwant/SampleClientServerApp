@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 
@@ -25,8 +26,16 @@ class PersonDetailViewController: BaseTableViewController<ContactDetailCell, Gen
             let value = displayDisctionary[key ?? ""]
              return GenericDisplayModal(title: key ?? "", subtitle: value as! String)
         })
+        
         self.items = personDetailArray
         
     }
     
+}
+
+extension PersonDetailViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }

@@ -48,6 +48,7 @@ struct  Person :  ViewControllerPassableObject {
     var createdAt : String
     var profilePic : Data?
     
+    
     var fullName : String {
         
         return self.firstName + " " + self.lastName
@@ -90,8 +91,17 @@ struct  Person :  ViewControllerPassableObject {
     
     func getDisplayData() -> [[String : Any]] {
         
-        return [["Name": self.fullName], ["Email": self.email], ["Designation" : self.jobTitle], ["Favourite Colour": self.favouriteColor], ["Joining Date": self.joiningDate]]
+        return [["Full name": self.fullName], ["Email": self.email], ["Designation" : self.jobTitle], ["Favourite Colour": self.favouriteColor], ["Joining Date": self.joiningDate]]
     }
     
+    func getPersonInfoArray() -> [GenericDisplayModal] {
+        
+        let personDetailArray =  self.getDisplayData().map({ displayDisctionary -> GenericDisplayModal in
+            let key = displayDisctionary.keys.first
+            let value = displayDisctionary[key ?? ""]
+             return GenericDisplayModal(title: key ?? "", subtitle: value as! String)
+        })
+        return personDetailArray
+    }
 
 }

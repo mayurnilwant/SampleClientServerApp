@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 
 class PeopleViewController: BaseTableViewController<PersonCell, Person> {
@@ -50,9 +51,19 @@ extension PeopleViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        
         let personModel = items?[indexPath.row]
-        let personDetailVC = ViewControllerFactory.getViewControllerObject(ofType: .personDetail, andPassableObject: personModel)
-        self.navigationController?.pushViewController(personDetailVC, animated: true)
+        
+
+        var personDetailVC : UIViewController!
+        if #available(iOS 13.0, *) {
+            personDetailVC  = UIHostingController(rootView: PersonDetailView(person: personModel))
+            personDetailVC.title = "Contacts Details"
+        } else {
+            personDetailVC = ViewControllerFactory.getViewControllerObject(ofType: .personDetail, andPassableObject: personModel)
+            }
         tableView.deselectRow(at: indexPath, animated: true)
+        self.navigationController?.pushViewController(personDetailVC, animated: true)
+        
     }
 }

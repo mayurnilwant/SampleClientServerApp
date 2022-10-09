@@ -38,6 +38,7 @@
 		E6C2BBE328F2912000F9BA93 /* Mphasis_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBE228F2912000F9BA93 /* Mphasis_TestTests.swift */; };
 		E6C2BBEA28F2913E00F9BA93 /* UrlGeneratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBE928F2913E00F9BA93 /* UrlGeneratorTest.swift */; };
 		E6C2BBEC28F2944D00F9BA93 /* RoomsVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBEB28F2944D00F9BA93 /* RoomsVMTest.swift */; };
+		E6C2BBF028F312A600F9BA93 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C2BBEF28F312A600F9BA93 /* PersonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		E6C2BBE228F2912000F9BA93 /* Mphasis_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mphasis_TestTests.swift; sourceTree = "<group>"; };
 		E6C2BBE928F2913E00F9BA93 /* UrlGeneratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlGeneratorTest.swift; sourceTree = "<group>"; };
 		E6C2BBEB28F2944D00F9BA93 /* RoomsVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsVMTest.swift; sourceTree = "<group>"; };
+		E6C2BBEF28F312A600F9BA93 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		E6BF968728F01E0300360F73 /* Mphasis_Test */ = {
 			isa = PBXGroup;
 			children = (
+				E6C2BBEE28F3127800F9BA93 /* SwiftUI */,
 				E6AC76C728F1799E0011BC02 /* Base Classes */,
 				E6AC76C628F1794C0011BC02 /* UI Interface */,
 				E6BF96B428F055B900360F73 /* Extension */,
@@ -271,6 +274,14 @@
 				E6C2BBEB28F2944D00F9BA93 /* RoomsVMTest.swift */,
 			);
 			path = Mphasis_TestTests;
+			sourceTree = "<group>";
+		};
+		E6C2BBEE28F3127800F9BA93 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E6C2BBEF28F312A600F9BA93 /* PersonDetailView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +399,7 @@
 				E6AC76CF28F18E290011BC02 /* RoomCell.swift in Sources */,
 				E638118628F214E100984466 /* PersonDetailViewController.swift in Sources */,
 				E6BF96AA28F0418700360F73 /* Person.swift in Sources */,
+				E6C2BBF028F312A600F9BA93 /* PersonDetailView.swift in Sources */,
 				E6AC76CC28F18A660011BC02 /* Extension+Color.swift in Sources */,
 				E6BF96AF28F048B600360F73 /* RoomViewModel.swift in Sources */,
 				E6BF968928F01E0300360F73 /* AppDelegate.swift in Sources */,
