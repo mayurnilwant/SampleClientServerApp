@@ -20,6 +20,6 @@ Improvements in the app.
 2) UI test cases.
 3) Better error handling
 4) Accessibility optimization. Currently it only support accessibility-value.
-5) Search functionality on COntacts/Poeple screen to search person/contact. 
+5) Search functionality on Contacts/People screen to search person/contact. 
 6) Test cases to test jSON parsing. 
 7) UISize classes to support dynamic fonts in case of iPhone and iPAD.
